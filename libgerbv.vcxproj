@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\amacro.c" />
+    <ClCompile Include="src\config.c" />
+    <ClCompile Include="src\csv.c" />
+    <ClCompile Include="src\draw.c" />
+    <ClCompile Include="src\drill.c" />
+    <ClCompile Include="src\drill_stats.c" />
+    <ClCompile Include="src\export-drill.c" />
+    <ClCompile Include="src\export-dxf.cpp" />
+    <ClCompile Include="src\export-geda-pcb.c" />
+    <ClCompile Include="src\export-image.c" />
+    <ClCompile Include="src\export-isel-drill.c" />
+    <ClCompile Include="src\export-rs274x.c" />
+    <ClCompile Include="src\gerber.c" />
+    <ClCompile Include="src\gerbv.c" />
+    <ClCompile Include="src\gerb_file.c" />
+    <ClCompile Include="src\gerb_image.c" />
+    <ClCompile Include="src\gerb_stats.c" />
+    <ClCompile Include="src\lrealpath.c" />
+    <ClCompile Include="src\main.c" />
+    <ClCompile Include="src\pick-and-place.c" />
+    <ClCompile Include="src\project.c" />
+    <ClCompile Include="src\render.c" />
+    <ClCompile Include="src\scheme.c" />
+    <ClCompile Include="src\selection.c" />
+    <ClCompile Include="src\tooltable.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\amacro.h" />
+    <ClInclude Include="src\common.h" />
+    <ClInclude Include="src\config.h" />
+    <ClInclude Include="src\csv.h" />
+    <ClInclude Include="src\csv_defines.h" />
+    <ClInclude Include="src\draw.h" />
+    <ClInclude Include="src\drill.h" />
+    <ClInclude Include="src\drill_stats.h" />
+    <ClInclude Include="src\gerber.h" />
+    <ClInclude Include="src\gerbv.h" />
+    <ClInclude Include="src\gerb_file.h" />
+    <ClInclude Include="src\gerb_image.h" />
+    <ClInclude Include="src\gerb_stats.h" />
+    <ClInclude Include="src\gettext.h" />
+    <ClInclude Include="src\lrealpath.h" />
+    <ClInclude Include="src\main.h" />
+    <ClInclude Include="src\opdefines.h" />
+    <ClInclude Include="src\pick-and-place.h" />
+    <ClInclude Include="src\project.h" />
+    <ClInclude Include="src\render.h" />
+    <ClInclude Include="src\scheme-private.h" />
+    <ClInclude Include="src\scheme.h" />
+    <ClInclude Include="src\selection.h" />
+    <ClInclude Include="src\_config_.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="libgerbv.def" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{c65bdbb2-f261-42b1-9c61-c81c423ede5b}</ProjectGuid>
+    <RootNamespace>libgerbv</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>$(ProjectName)</TargetName>
+    <OutDir>$(SolutionDir)installed\x86-windows\debug\bin\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>$(ProjectName)</TargetName>
+    <OutDir>$(SolutionDir)installed\x86-windows\bin\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>$(ProjectName)</TargetName>
+    <OutDir>$(SolutionDir)installed\x64-windows\debug\bin\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>$(ProjectName)</TargetName>
+    <OutDir>$(SolutionDir)installed\x64-windows\bin\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg">
+    <VcpkgEnabled>true</VcpkgEnabled>
+    <VcpkgManifestInstall>true</VcpkgManifestInstall>
+    <VcpkgAutoLink>true</VcpkgAutoLink>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;USE_INTERFACE;_USE_MATH_DEFINES</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PreprocessToFile>false</PreprocessToFile>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies);dxflib.lib;cairo.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>libgerbv.def</ModuleDefinitionFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>if not exist $(SolutionDir)\installed\x86-windows\include\ mkdir $(SolutionDir)\installed\x86-windows\include
+if not exist $(SolutionDir)\installed\x86-windows\include\libgerbv\ mkdir $(SolutionDir)\installed\x86-windows\include\libgerbv
+
+copy $(SolutionDir)\src\_config_.h $(SolutionDir)\installed\x86-windows\include\libgerbv /Y
+copy $(SolutionDir)\src\common.h $(SolutionDir)\installed\x86-windows\include\libgerbv /Y
+copy $(SolutionDir)\src\config.h $(SolutionDir)\installed\x86-windows\include\libgerbv /Y
+copy $(SolutionDir)\src\gerb_file.h $(SolutionDir)\installed\x86-windows\include\libgerbv /Y
+copy $(SolutionDir)\src\gerber.h $(SolutionDir)\installed\x86-windows\include\libgerbv /Y
+copy $(SolutionDir)\src\gerbv.h $(SolutionDir)\installed\x86-windows\include\libgerbv /Y
+copy $(SolutionDir)\src\main.h $(SolutionDir)\installed\x86-windows\include\libgerbv /Y
+copy $(SolutionDir)\src\project.h $(SolutionDir)\installed\x86-windows\include\libgerbv /Y
+copy $(SolutionDir)\src\render.h $(SolutionDir)\installed\x86-windows\include\libgerbv /Y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions);HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;USE_INTERFACE;_USE_MATH_DEFINES</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PreprocessToFile>false</PreprocessToFile>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies);dxflib.lib;cairo.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>libgerbv.def</ModuleDefinitionFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>if not exist $(SolutionDir)\installed\x86-windows\include\ mkdir $(SolutionDir)\installed\x86-windows\include
+if not exist $(SolutionDir)\installed\x86-windows\include\libgerbv\ mkdir $(SolutionDir)\installed\x86-windows\include\libgerbv
+
+copy $(SolutionDir)\src\_config_.h $(SolutionDir)\installed\x86-windows\include\libgerbv /Y
+copy $(SolutionDir)\src\common.h $(SolutionDir)\installed\x86-windows\include\libgerbv /Y
+copy $(SolutionDir)\src\config.h $(SolutionDir)\installed\x86-windows\include\libgerbv /Y
+copy $(SolutionDir)\src\gerb_file.h $(SolutionDir)\installed\x86-windows\include\libgerbv /Y
+copy $(SolutionDir)\src\gerber.h $(SolutionDir)\installed\x86-windows\include\libgerbv /Y
+copy $(SolutionDir)\src\gerbv.h $(SolutionDir)\installed\x86-windows\include\libgerbv /Y
+copy $(SolutionDir)\src\main.h $(SolutionDir)\installed\x86-windows\include\libgerbv /Y
+copy $(SolutionDir)\src\project.h $(SolutionDir)\installed\x86-windows\include\libgerbv /Y
+copy $(SolutionDir)\src\render.h $(SolutionDir)\installed\x86-windows\include\libgerbv /Y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;USE_INTERFACE;_USE_MATH_DEFINES;_USE_MATH_DEFINES;WIN32;</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <DisableSpecificWarnings>4819</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies);dxflib.lib;cairo.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>libgerbv.def</ModuleDefinitionFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>if not exist $(SolutionDir)\installed\x64-windows\include\ mkdir $(SolutionDir)\installed\x64-windows\include
+if not exist $(SolutionDir)\installed\x64-windows\include\libgerbv\ mkdir $(SolutionDir)\installed\x64-windows\include\libgerbv
+
+copy $(SolutionDir)\src\_config_.h $(SolutionDir)\installed\x64-windows\include\libgerbv /Y
+copy $(SolutionDir)\src\common.h $(SolutionDir)\installed\x64-windows\include\libgerbv /Y
+copy $(SolutionDir)\src\config.h $(SolutionDir)\installed\x64-windows\include\libgerbv /Y
+copy $(SolutionDir)\src\gerb_file.h $(SolutionDir)\installed\x64-windows\include\libgerbv /Y
+copy $(SolutionDir)\src\gerber.h $(SolutionDir)\installed\x64-windows\include\libgerbv /Y
+copy $(SolutionDir)\src\gerbv.h $(SolutionDir)\installed\x64-windows\include\libgerbv /Y
+copy $(SolutionDir)\src\main.h $(SolutionDir)\installed\x64-windows\include\libgerbv /Y
+copy $(SolutionDir)\src\project.h $(SolutionDir)\installed\x64-windows\include\libgerbv /Y
+copy $(SolutionDir)\src\render.h $(SolutionDir)\installed\x64-windows\include\libgerbv /Y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions);HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;USE_INTERFACE;_USE_MATH_DEFINES;WIN32;</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <DisableSpecificWarnings>4819</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies);dxflib.lib;cairo.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>libgerbv.def</ModuleDefinitionFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>if not exist $(SolutionDir)\installed\x64-windows\include\ mkdir $(SolutionDir)\installed\x64-windows\include
+if not exist $(SolutionDir)\installed\x64-windows\include\libgerbv\ mkdir $(SolutionDir)\installed\x64-windows\include\libgerbv
+
+copy $(SolutionDir)\src\_config_.h $(SolutionDir)\installed\x64-windows\include\libgerbv /Y
+copy $(SolutionDir)\src\common.h $(SolutionDir)\installed\x64-windows\include\libgerbv /Y
+copy $(SolutionDir)\src\config.h $(SolutionDir)\installed\x64-windows\include\libgerbv /Y
+copy $(SolutionDir)\src\gerb_file.h $(SolutionDir)\installed\x64-windows\include\libgerbv /Y
+copy $(SolutionDir)\src\gerber.h $(SolutionDir)\installed\x64-windows\include\libgerbv /Y
+copy $(SolutionDir)\src\gerbv.h $(SolutionDir)\installed\x64-windows\include\libgerbv /Y
+copy $(SolutionDir)\src\main.h $(SolutionDir)\installed\x64-windows\include\libgerbv /Y
+copy $(SolutionDir)\src\project.h $(SolutionDir)\installed\x64-windows\include\libgerbv /Y
+copy $(SolutionDir)\src\render.h $(SolutionDir)\installed\x64-windows\include\libgerbv /Y
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
